@@ -12,3 +12,4 @@
 */
 
 $router->get('/', 'HomeController@index');
+$router->controller('password', 'Auth\RemindersController');
