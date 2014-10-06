@@ -24,4 +24,11 @@ class User extends Model implements UserContract, RemindableContract {
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
+	/**
+	 * The fillable attributes for the model.
+	 * 
+	 * @var array
+	 */
+	protected $fillable = ['username', 'email', 'password', 'real_name'];
+
 }
