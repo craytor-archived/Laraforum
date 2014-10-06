@@ -4,4 +4,4 @@ This is a pre-built laravel application packed with a fully functional forum fra
 
 ### License
 
-Laraforum is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+This application is powered by the Laravel framework. Laravel is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT). 
