@@ -20,12 +20,18 @@ return [
 
 	'connections' => [
 
+		'sqlite' => [
+			'driver'   => 'sqlite',
+			'database' => storage_path().'/database.sqlite',
+			'prefix'   => '',
+		],
+
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'homestead',
-			'username'  => 'homestead',
-			'password'  => 'secret',
+			'host'      => $_ENV['DB_HOST'],
+			'database'  => $_ENV['DB_DATABASE'],
+			'username'  => $_ENV['DB_USERNAME'],
+			'password'  => $_ENV['DB_PASSWORD'],
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -34,12 +40,21 @@ return [
 		'pgsql' => [
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'homestead',
-			'username' => 'homestead',
-			'password' => 'secret',
+			'database' => 'forge',
+			'username' => 'forge',
+			'password' => '',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
+		],
+
+		'sqlsrv' => [
+			'driver'   => 'sqlsrv',
+			'host'     => 'localhost',
+			'database' => 'database',
+			'username' => 'root',
+			'password' => '',
+			'prefix'   => '',
 		],
 
 	],
